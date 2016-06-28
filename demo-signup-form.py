@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-Site = 'Demo Signup Form'
+Site = 'KURT Signup Form'
 
-Timezone = 'Pacific/Honolulu'
+Timezone = 'US/Eastern'
 
 Colors = '''
     base03:    #002b36;
@@ -35,7 +35,7 @@ main_page_html = '''<style>
 
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">Hi</span></header>
+ <header class="hi"><span class="color_b">Welcome to KURT!</span></header>
 
 </div><!-- - /page_html - -->'''
 
@@ -46,7 +46,7 @@ td.label { font-size: 14px; text-align: right; padding-right: 10px; }
 input[type="text"] { width: 200px; height: 16px; }
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">Fill Out The Form</span></header>
+ <header class="hi"><span class="color_b">Get Updates from KURT</span></header>
   <article class="form_wrap">
     <form action="../../add_form" enctype="multipart/form-data" method="post">
       <table>
@@ -60,7 +60,7 @@ input[type="text"] { width: 200px; height: 16px; }
         </tr>
         <tr>
           <td></td>
-          <td style="text-align:right"><input type="submit" value="Sign Up" /></td>
+          <td style="text-align:right"><input type="submit" value="Sign Up HERE" /></td>
         </tr>
       </table>
     </form>
@@ -72,7 +72,7 @@ entries_page_html = '''<style>
 .text_wrap { margin-left: 65px; }
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">Form Entries</span></header>
+ <header class="hi"><span class="color_b">KURT Form Entries</span></header>
   <article class="text_wrap">
     <p>Sign in as an &nbsp; <b><span class="color_a">Admin User</span></b> &nbsp; to view form data</p>
   </article><!-- - /form_wrap - -->
@@ -91,7 +91,7 @@ entries_page_html_admin = '''<style>
 .user_name { font-size: 22px; color: #073642; }
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">Form Entries</span></header>
+ <header class="hi"><span class="color_b">KURT Form Entries</span></header>
   <article class="list_wrap">
     <div class="item_wrap" ng-repeat="item in items">
       <div class="item_data">
@@ -117,7 +117,7 @@ code_page_html = '''<style>
 <div class="page_html">
  <header class="hi"><span class="color_b">Code Link</span></header>
   <div class="link_wrap">
-    <p>View on &nbsp; <a href="https://github.com/Kyle2501/App-Engine-Parts" target="_blank">GitHub</a></p>
+    <p>See on &nbsp; <a href="https://github.com/Kyle2501/App-Engine-Parts" target="_blank">GitHub</a></p>
   </div><!-- - /link_wrap - -->
 </div><!-- - /page_html - -->'''
 
