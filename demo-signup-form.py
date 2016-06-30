@@ -59,6 +59,10 @@ input[type="text"] { width: 200px; height: 16px; }
           <td class="input"><input type="text" name="user_name" /></td>
         </tr>
         <tr>
+          <td class="label">Last Name</td>
+          <td class="input"><input type="text" name="last_name" /></td>
+        </tr>
+        <tr>
           <td></td>
           <td style="text-align:right"><input type="submit" value="Sign Up HERE" /></td>
         </tr>
@@ -87,6 +91,7 @@ entries_page_html_admin = '''<style>
 .right_wrap a { color: #cb4b16; }
 .right_wrap a:hover { text-decoration: underline; }
 .id_wrap { padding-top 40px; color: #839496; }
+.last_name { font-size: 14px; line-height: 20px; }
 .email_address { font-size: 14px; line-height: 20px; }
 .user_name { font-size: 22px; color: #073642; }
 </style>
@@ -101,7 +106,8 @@ entries_page_html_admin = '''<style>
           <div class="id_wrap">[!item.data_id!]</div>
         </div><!-- - /right_wrap - -->
 
-        <p><span class="email_address">[!item.email_address!]</span>
+        <span class="last_name">[!item.last_name!]</span></p>
+        <span class="email_address">[!item.email_address!]</span>
         <br />
         <span class="user_name">[!item.user_name!]</span></p>
         
@@ -149,6 +155,7 @@ class Form_db(db.Model):
   #
     user_name = db.StringProperty()
     email_address = db.StringProperty()
+    last_name = db.StringProperty()
 
 class addForm_db(webapp2.RequestHandler):
     def post(self):
@@ -159,6 +166,7 @@ class addForm_db(webapp2.RequestHandler):
       # - -
         item.user_name = self.request.get('user_name')
         item.email_address = self.request.get('email_address')
+        item.last_name = self.request.get('last_name')
       #
         item.put()
         time.sleep(1)
@@ -247,7 +255,7 @@ class listData(webapp2.RequestHandler):
         base = os.path.basename(page_address)
         if users.is_current_user_admin():
             if base == 'entries':
-                q = db.Query(Form_db, projection=('data_id', 'email_address', 'user_name'))
+                q = db.Query(Form_db, projection=('data_id', 'email_address', 'user_name', 'last_name'))
                 db_data = q.order('-addTime').fetch(50)
         data = []
         for f in db_data:
