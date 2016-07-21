@@ -124,12 +124,7 @@ code_page_html = '''<style>
  <header class="hi"><span class="color_b">Code Link</span></header>
   <div class="link_wrap">
     <p>See on &nbsp; <a href="https://github.com/Kyle2501/App-Engine-Parts" target="_blank">GitHub</a></p>
-  </div><!-- - /link_wrap - -->
-  <div class="social_wrap">
-    <a href="https://www.instagram.com/shannycohen_fitness/" target="_blank"><i class="fa fa-instagram"></i></a>
-    <a href="https://twitter.com/shannycohen_fit" target="_blank"><i class="fa fa-twitter-square"></i></a>
-    <a href="https://www.facebook.com/ShannyCohenAthletePage/timeline" target="_blank"><i class="fa fa-facebook-official"></i></a>
-  </div><!-- . social_wrap - --> 
+  </div><!-- - /link_wrap - --> 
 </div><!-- - /page_html - -->'''
 
 
