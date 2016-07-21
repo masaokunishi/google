@@ -91,8 +91,8 @@ entries_page_html_admin = '''<style>
 .right_wrap a { color: #cb4b16; }
 .right_wrap a:hover { text-decoration: underline; }
 .id_wrap { padding-top 40px; color: #839496; }
-.last_name { font-size: 14px; line-height: 20px; }
-.email_address { font-size: 14px; line-height: 20px; }
+.last_name { font-size: 14px; }
+.email_address { font-size: 14px; margin-bottom: 5px; display:block; }
 .user_name { font-size: 22px; color: #073642; }
 </style>
 <div class="page_html">
@@ -106,7 +106,7 @@ entries_page_html_admin = '''<style>
           <div class="id_wrap">[!item.data_id!]</div>
         </div><!-- - /right_wrap - -->
 
-        <span class="last_name">[!item.last_name!]</span></p>
+        <span class="last_name">[!item.last_name!]</span><br />
         <span class="email_address">[!item.email_address!]</span>
         <br />
         <span class="user_name">[!item.user_name!]</span></p>
@@ -125,6 +125,11 @@ code_page_html = '''<style>
   <div class="link_wrap">
     <p>See on &nbsp; <a href="https://github.com/Kyle2501/App-Engine-Parts" target="_blank">GitHub</a></p>
   </div><!-- - /link_wrap - -->
+  <div class="social_wrap">
+    <a href="https://www.instagram.com/shannycohen_fitness/" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://twitter.com/shannycohen_fit" target="_blank"><i class="fa fa-twitter-square"></i></a>
+    <a href="https://www.facebook.com/ShannyCohenAthletePage/timeline" target="_blank"><i class="fa fa-facebook-official"></i></a>
+  </div><!-- . social_wrap - --> 
 </div><!-- - /page_html - -->'''
 
 
@@ -227,6 +232,8 @@ class publicSite(webapp2.RequestHandler):
             page_id = 'code'
             page_name = 'Code'
             page_html = code_page_html
+
+
                
       # - template
         objects = {
