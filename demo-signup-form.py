@@ -35,7 +35,7 @@ main_page_html = '''<style>
 
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">Welcome to KURT!</span></header>
+ <header class="hi"><span class="color_b">KURT- On demand food recycling collection for restaurants.</span></header>
 
 </div><!-- - /page_html - -->'''
 
@@ -121,10 +121,11 @@ code_page_html = '''<style>
 .link_wrap { margin-left: 85px; margin-top: 45px; }
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">Code Link</span></header>
+ <header class="hi"><span class="color_b">Links</span></header>
   <div class="link_wrap">
-    <p>See on &nbsp; <a href="https://github.com/Kyle2501/App-Engine-Parts" target="_blank">GitHub</a></p>
-  </div><!-- - /link_wrap - --> 
+    <p>See on &nbsp; <a href="https://github.com/masaokunishi/google" target="_blank">GitHub</a></p>
+    <p>Find me on &nbsp; <a href="https://twitter.com/risingstartups" target="_blank">Twitter</a></p>
+  </div><!-- - /link_wrap - -->
 </div><!-- - /page_html - -->'''
 
 
