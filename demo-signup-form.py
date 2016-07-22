@@ -35,7 +35,30 @@ main_page_html = '''<style>
 
 </style>
 <div class="page_html">
- <header class="hi"><span class="color_b">KURT- On demand food recycling collection for restaurants.</span></header>
+ <header class="hi"><span class="color_b">KURT</span></header>
+  <article class="form_wrap">
+    <form action="../../add_form" enctype="multipart/form-data" method="post">
+      <table>
+        <tr>
+          <td class="label">Email Addess</td>
+          <td class="input"><input type="text" name="email_address" /></td>
+        </tr>
+        <tr>
+          <td class="label">User Name</td>
+          <td class="input"><input type="text" name="user_name" /></td>
+        </tr>
+        <tr>
+          <td class="label">Last Name</td>
+          <td class="input"><input type="text" name="last_name" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td style="text-align:right"><input type="submit" value="Sign Up HERE" /></td>
+        </tr>
+      </table>
+    </form>
+  </article><!-- - /form_wrap - -->
+
 
 </div><!-- - /page_html - -->'''
 
